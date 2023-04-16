@@ -92,7 +92,7 @@ input[type='checkbox'] {
 }
 
 .logoImg {
-   height: 25px;
+   height: 50px;
    content: url("./images/logo.png");
 }
 
@@ -121,7 +121,7 @@ input[type='checkbox'] {
 }
 
 .forecast {
-  margin-bottom: 39px;
+  margin-bottom: 25px;
 }
 
 #location {
@@ -131,7 +131,7 @@ input[type='checkbox'] {
 
 .date-time {
   font-size: 25px;
-  margin-bottom: 38px;
+  margin-bottom: 25px;
 
 letter-spacing: 0.05em;
 }
@@ -250,4 +250,8 @@ input:checked + .slider:before {
 
 .slider.round:before {
   border-radius: 50%;
+}
+
+button i {
+  cursor: pointer;
 }
