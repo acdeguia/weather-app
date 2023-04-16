@@ -112,6 +112,7 @@ input[type='checkbox'] {
   display: flex;
   justify-content: space-between;
   font-family: openSans-semi-bold;
+  padding-top: 30px;
 }
 
 #forecast {
