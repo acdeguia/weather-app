@@ -1,10 +1,7 @@
 const weather = function () {
 
-
-
   async function getWeatherData(city) {
-    city = document.getElementById('search-location')
-    console.log(city)
+ 
 
     try {
       const response = await fetch( `https://api.weatherapi.com/v1/current.json?key=efc019cca96741a3aee74048231004&q=${city}}`);
@@ -28,7 +25,7 @@ const weather = function () {
     return processedData;
   }
 
-  getWeatherData();
-};
+  return { getWeatherData }
+}();
 
 export default weather;
