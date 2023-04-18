@@ -10,8 +10,10 @@ const render = function () {
     const wind = document.getElementById("wind");
     const chanceOfRain = document.getElementById("chance-of-rain")
     const condition = document.getElementById("condition")
+    const icon = document.getElementById("icon")
+    
 
-
+    icon.style.content = `${weatherData.icon}`
     city.textContent = weatherData.city;
     temp.textContent = `${weatherData.temp} °C`;
     feelsLike.textContent = `${weatherData.feelsLike} °C`;

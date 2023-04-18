@@ -10,7 +10,7 @@ const weather = (function () {
       //console.log(processedData); // log the processed weather data to the console
       return processedData
     } catch (error) {
-      console.log(error);
+      alert("location not found")
     }
   }
 
@@ -23,6 +23,7 @@ const weather = (function () {
       humidity: data.current.humidity,
       wind: data.current.wind_kph,
       chanceOfRain: data.current.precip_in,
+      icon: data.current.condition.icon,
     };
     return processedData;
   }
