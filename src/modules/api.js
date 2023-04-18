@@ -1,30 +1,24 @@
 const weather = function () {
 
-    function filterData(data) {
-        const filteredData = data.map(item => ({
-          city: locationData.location.name,
-          condition: locationData.current.condition.text,
-          temp: locationData.current.feelslike_c,
-          humidity: locationData.current.humidity,
-        }));
-        return filteredData;
-      }
-
-  async function fetchLocationData(cityLocation) {
-    
-    try {
-    //   const response = await fetch(`https://api.weatherapi.com/v1/current.json?key=efc019cca96741a3aee74048231004&q=${cityLocation}`,{ mode: "cors" });
-      const response = await fetch(`https://api.weatherapi.com/v1/current.json?key=efc019cca96741a3aee74048231004&q=manila}`,{ mode: "cors" });
-      const locationData = await response.json();
-      console.log(locationData);
-
-    } catch (error) {
-      console.log(error);
-    }
+  async function getWeatherData(city) {
+    const response = await fetch( `https://api.weatherapi.com/v1/current.json?key=efc019cca96741a3aee74048231004&q=manila}`);
+    const data = await response.json();
+    const processedData = processWeatherData(data);
+    console.log(processedData); // log the processed weather data to the console
   }
 
-  fetchLocationData()
-    // return {dataObject}
+
+  function processWeatherData(data) {
+    const processedData = {
+      city: data.location.name,
+      condition: data.current.condition.text,
+      temp: data.current.feelslike_c,
+      humidity: data.current.humidity,
+    };
+    return processedData;
+  }
+
+  getWeatherData();
 };
 
 export default weather;
