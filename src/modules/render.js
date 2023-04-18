@@ -3,6 +3,10 @@ const render = function () {
 
     if (!weatherData) return;
 
+    const date = new Date();
+document.getElementById("date").innerHTML = date.toDateString();
+
+
     const city = document.getElementById("location");
     const temp = document.getElementById("temp");
     const feelsLike = document.getElementById("feels-like");
