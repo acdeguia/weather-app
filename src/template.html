@@ -17,12 +17,19 @@
         <p>Forecasta</p>
       </div>
 
-      <form id="search-form">
+      <!-- <form id="search-form">
         <input id="search-location" type="text" placeholder="Search.." name="search" />
         <button id="search-btn">
           <i class="fa fa-search"></i>
         </button>
+      </form> -->
+
+      <form id="search-form">
+        <!-- <label for="location-input">Enter your location:</label> -->
+        <input type="text" id="location-input"  placeholder="Search.." name="location">
+        <button type="submit"><i class="fa fa-search"></i></button>
       </form>
+
       <label class="switch">
         <input type="checkbox" checked>
         <span class="slider round"></span>
@@ -32,12 +39,12 @@
     <div class="main">
       <div class="left">
         <div>
-          <p>Sunrise</p>
-          <p id="Sunrise">5:42</p>
+          <p>Chance of rain</p>
+          <p id="chance-of-rain">0</p>
         </div>
         <div>
-          <p>Sunset</p>
-          <p id="Sunset">18:09</p>
+          <p>Feels like</p>
+          <p id="feels-like">21°C</p>
         </div>
       </div>
       <div class="center">
