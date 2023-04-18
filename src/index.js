@@ -1,6 +1,6 @@
 import "../src/style.css";
 import weather from "./modules/api";
-import search from "./modules/search";
+import render from "./modules/render";
 
 
 const searchForm = document.querySelector('#search-form');
@@ -14,5 +14,6 @@ const locationInput = document.querySelector('#location-input')
   searchBtn.addEventListener("click", async () => {
     if (locationInput.value === "") return;
     const weatherData = await weather.getWeatherData(locationInput.value);
-    // search.setSearchResult(weatherData);
+    console.log(weatherData)
+     render.renderWeatherData(weatherData);
   });

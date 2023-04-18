@@ -116,12 +116,12 @@ input[type='checkbox'] {
   padding-top: 30px;
 }
 
-#forecast {
+#condition {
   font-size: 70px;
   margin-top: -15px;
 }
 
-.forecast {
+.condition {
   margin-bottom: 25px;
 }
 

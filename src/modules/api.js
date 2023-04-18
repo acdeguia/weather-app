@@ -1,13 +1,13 @@
-const weather = function () {
-
+const weather = (function () {
   async function getWeatherData(city) {
- 
-
     try {
-      const response = await fetch( `https://api.weatherapi.com/v1/current.json?key=efc019cca96741a3aee74048231004&q=${city}}`);
-    const data = await response.json();
-    const processedData = processWeatherData(data);
-    console.log(processedData); // log the processed weather data to the console
+      const response = await fetch(
+        `https://api.weatherapi.com/v1/current.json?key=efc019cca96741a3aee74048231004&q=${city}}`
+      );
+      const data = await response.json();
+      const processedData = processWeatherData(data);
+      //console.log(processedData); // log the processed weather data to the console
+      return processedData
     } catch (error) {
       console.log(error);
     }
@@ -25,7 +25,7 @@ const weather = function () {
     return processedData;
   }
 
-  return { getWeatherData }
-}();
+  return { getWeatherData };
+})();
 
 export default weather;
