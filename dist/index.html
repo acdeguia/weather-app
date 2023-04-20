@@ -1,12 +1,107 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-<script defer src="main.js"></script></head>
-<body>
-    
-</body>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  <script defer src="main.js"></script></head>
+  <body>
+    <header>
+      <div class="logo">
+        <div class="logoImg"></div>
+        <p>Forecasta</p>
+      </div>
+
+      <!-- <form id="search-form">
+        <input id="search-location" type="text" placeholder="Search.." name="search" />
+        <button id="search-btn">
+          <i class="fa fa-search"></i>
+        </button>
+      </form> -->
+
+      <form id="search-form">
+        <!-- <label for="location-input">Enter your location:</label> -->
+        <input type="text" id="location-input"  placeholder="Enter City.." name="location">
+        <button id="search-btn" type="submit"><i class="fa fa-search"></i></button>
+      </form>
+
+      <label class="switch">
+        <input type="checkbox" checked>
+        <span class="slider round"></span>
+      </label>
+    </header>
+
+    <div class="main">
+      <div class="left">
+        <div>
+          <p>Chance of rain:</p>
+          <p id="chance-of-rain">0</p>
+        </div>
+        <div>
+          <p>Feels like:</p>
+          <p id="feels-like">21°C</p>
+        </div>
+      </div>
+      <div class="center">
+        <div class="condition">
+            <h1 id="condition"></h1>
+            <h2 id="location"></h2>
+        </div>
+        <div class="date-time">
+            <p id="date"></p>
+            <p id="time"></p>
+        </div>
+        <div class="temp">
+            <h1 id="temp"></h1>
+            <div id="icon"></div>
+        </div>
+      </div>
+      <div class="right">
+        <div>
+          <p>Humidity:</p>
+          <p id="humidity"></p>
+        </div>
+        <div>
+          <p>Wind:</p>
+          <p id="wind"></p>
+        </div>
+      </div>
+    </div>
+
+    <!-- <div class="weekly-forecast center">
+      <div>
+        <p>Sunday</p>
+        <span>18°C</span>
+      </div>
+      <div>
+        <p>Monday</p>
+        <span>18°C</span>
+      </div>
+      <div>
+        <p>Tuesday</p>
+        <span>18°C</span>
+      </div>
+      <div>
+        <p>Wednesday</p>
+        <span>18°C</span>
+      </div>
+      <div>
+        <p>Thursday</p>
+        <span>18°C</span>
+      </div>
+      <div>
+        <p>Friday</p>
+        <span>18°C</span>
+      </div>
+      <div>
+        <p>Saturday</p>
+        <span>18°C</span>
+      </div>
+    </div> -->
+  </body>
 </html>
