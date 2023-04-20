@@ -6,9 +6,6 @@ const render = function () {
     const day = new Date();
 document.getElementById("date").innerHTML = day.toDateString();
 
-let time = new Date();
-document.getElementById("time").innerHTML = `${day.getHours()}:${day.getMinutes()}`;
-
     const city = document.getElementById("location");
     const temp = document.getElementById("temp");
     const feelsLike = document.getElementById("feels-like");
