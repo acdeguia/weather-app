@@ -8,6 +8,7 @@ const weather = (function () {
       console.log(data)
       const processedData = processWeatherData(data);
       //console.log(processedData); // log the processed weather data to the console
+      console.log(processedData)
       return processedData
     } catch (error) {
       alert("location not found")
@@ -24,6 +25,7 @@ const weather = (function () {
       wind: data.current.wind_kph,
       chanceOfRain: data.current.precip_in,
       icon: data.current.condition.icon,
+      country: data.location.country,
     };
     return processedData;
   }

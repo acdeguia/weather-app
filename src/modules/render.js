@@ -3,9 +3,11 @@ const render = function () {
 
     if (!weatherData) return;
 
-    const date = new Date();
-document.getElementById("date").innerHTML = date.toDateString();
+    const day = new Date();
+document.getElementById("date").innerHTML = day.toDateString();
 
+let time = new Date();
+document.getElementById("time").innerHTML = `${day.getHours()}:${day.getMinutes()}`;
 
     const city = document.getElementById("location");
     const temp = document.getElementById("temp");
@@ -16,9 +18,8 @@ document.getElementById("date").innerHTML = date.toDateString();
     const condition = document.getElementById("condition")
     const icon = document.getElementById("icon")
     
-
     icon.style.content = `${weatherData.icon}`
-    city.textContent = weatherData.city;
+    city.textContent = `${weatherData.city}, ${weatherData.country}`;
     temp.textContent = `${weatherData.temp} °C`;
     feelsLike.textContent = `${weatherData.feelsLike} °C`;
     humidity.textContent = `${weatherData.humidity} %`;
