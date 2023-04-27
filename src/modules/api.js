@@ -21,6 +21,7 @@ const weather = (function () {
       condition: data.current.condition.text,
       temp: data.current.feelslike_c,
       feelsLike: data.current.feelslike_c,
+      temp_f: data.current.feelslike_f,
       humidity: data.current.humidity,
       wind: data.current.wind_kph,
       chanceOfRain: data.current.precip_in,

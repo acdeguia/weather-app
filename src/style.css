@@ -31,14 +31,14 @@ body {
 
 
 header {
+
   grid-row: 1 ;
     display: grid;
     justify-content: space-between;
     align-items: center;
-    height: 90px;
+    height: 150px;
     margin-top: 0;
     grid-template-columns:33% 33% 33%;
-    border-bottom: 1px solid #000000;
 }
 
 form {
@@ -52,11 +52,10 @@ input{
   width: 378px;
   height: 40px;
 border: none;
-border-radius: 50px;
 padding-left: 25px;
 font-size: 18px;
 border-bottom: 1px solid #000000;
-border-radius: 50px;
+/* border-radius: 50px; */
 background-color: transparent;
 }
 
@@ -84,7 +83,7 @@ input:-webkit-autofill:active {
 input:focus {
   outline:0;
   border-bottom: 1px solid #000;
-box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.25);
+box-shadow: 0 4px 2px -2px rgba(0, 0, 0, 0.25);
 }
 
 input[type='checkbox'] { 
@@ -92,7 +91,7 @@ input[type='checkbox'] {
 }
 
 .logoImg {
-   height: 50px;
+   height: 60px;
    content: url("./images/logo.png");
 }
 
@@ -101,15 +100,22 @@ input[type='checkbox'] {
   align-items: center;
   gap: 17px;
   font-family: openSans-semi-bold;
-  font-size: 25px;
+  font-size: 30px;
 }
 
-.switch {
+.switch_div {
   justify-self: flex-end;
+  font-family: openSans-regular;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 15px;
+  font-weight: 600;
 }
 
 .main {
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
   justify-content: space-between;
   font-family: openSans-semi-bold;
   padding-top: 30px;
@@ -184,11 +190,7 @@ letter-spacing: 0.05em;
   text-align: right;
 }
 
-#icon {
-  content: url("./images/rain.svg");
-  height: 95px;
-  width: auto;
-}
+
 
 /* slider */
 
@@ -212,7 +214,7 @@ letter-spacing: 0.05em;
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: #DBE3F3;
+  background-color: #6A91CA;
   -webkit-transition: .4s;
   transition: .4s;
 }
