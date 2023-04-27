@@ -2,7 +2,7 @@
 
 ➠ [View Live Demo](https://acdeguia.github.io/weather-app/)
 
-![Screenshot 2023-04-20 150233](https://user-images.githubusercontent.com/67185278/233286753-459c16ba-0587-41b7-adfc-bf5932cc562a.png)
+![Screenshot 2023-04-27 155502](https://user-images.githubusercontent.com/67185278/234797052-35b6a4e2-7d72-4292-97aa-b390ecaeda67.png)
 
 ### Objective/s
 To develop a weather application that can fetch weather data for any given location and display it on a webpage with appropriate styling.
